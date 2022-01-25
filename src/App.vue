@@ -1,10 +1,11 @@
 <!--
- * @GitHub: https://github.com/MaleWeb/vvtp
- * @version: 
- * @Author: 扫地盲僧
- * @Date: 2022-01-19 16:19:27
- * @LastEditors: BlindMonk
- * @LastEditTime: 2022-01-21 19:37:38
+ * @@Author: 唐亿开
+ * @Date: 2022-01-24 19:30:42
+ * @LastEditors: 唐亿开
+ * @LastEditTime: 2022-01-25 11:38:22
+ * @FilePath: /my-vue3/src/App.vue
+ * @kjj1: 图案快捷键：window：ctrl+alt+j, mac：ctrl+cmd+j
+ * @kjj2: 首部注释快捷键：window：ctrl+alt+i, mac：ctrl+cmd+i
 -->
 <script setup lang="ts">
 import { useSettingsOutsideStore } from './store/modules/settings'
