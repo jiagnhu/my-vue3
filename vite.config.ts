@@ -17,9 +17,22 @@ import Markdown from 'vite-plugin-md'
 import viteSvgIcons from 'vite-plugin-svg-icons'
 // @ts-ignore
 import viteCompression from 'vite-plugin-compression'
-
+// 自定义组件name
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
+// 自动导入VueAPI，比如ref、computed、watch等
+import AutoImport from 'unplugin-auto-import/vite'
+// 图片自动导入
+import ViteImages from 'vite-plugin-vue-images'
 export default defineConfig({
   plugins: [
+    ViteImages({
+      dirs: ['src/assets/image'], // 指明图片存放目录
+    }),
+    AutoImport({
+      dts: 'src/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
+      imports: ['vue'],
+    }),
+    VueSetupExtend(),
     vue({
       include: [/\.vue$/, /\.md$/], // 引入兼容md文件
     }),

@@ -14,7 +14,7 @@ function getFolder(path) {
   const files = fs.readdirSync(path)
   files.forEach(function (item) {
     const stat = fs.lstatSync(path + '/' + item)
-    if (stat.isDirectory() === true && item != 'components') {
+    if (stat.isDirectory() === true && item !== 'components') {
       components.push(path + '/' + item)
       components.push.apply(components, getFolder(path + '/' + item))
     }

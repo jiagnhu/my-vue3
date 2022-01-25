@@ -1,10 +1,11 @@
 <template>
   <div>
+    登陆系统
     <!-- Your content -->
   </div>
 </template>
 
-<script setup name="{{ properCase componentName }}">
+<script setup name="LoginIndex">
 // const { proxy } = getCurrentInstance()
 // const router = useRouter()
 // const route = useRoute()

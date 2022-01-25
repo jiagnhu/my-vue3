@@ -13,8 +13,9 @@ console.log(useSettingsOutsideStore().title, '测试全局store')
 <template>
   <h1 class="text-9xl text-center mt-20">Hello FastVue3</h1>
   <p class="text-base font-Blimone text-center mt-5">
-    <a href="https://github.com/MaleWeb/vvtp" target="__bank">@扫地盲僧</a>
+    <a href="https://github.com/MaleWeb/vvtp" target="__bank">@jiagnhu</a>
   </p>
+  <router-view v-wechat-title="$route.meta.title" />
 </template>
 <style>
 #app {

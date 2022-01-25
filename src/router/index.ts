@@ -6,25 +6,22 @@
  * @LastEditors: BlindMonk
  * @LastEditTime: 2022-01-21 19:32:26
  */
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import { useSettingsOutsideStore } from '../store/modules/settings'
-import Index from '@/App.vue'
 
-const routesContext = import.meta.globEager('./modules/*.js')
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    name: 'Index',
-    component: Index,
-  },
-]
+const routesContext = import.meta.globEager('./modules/*.ts')
+const routes: Array<RouteRecordRaw> = []
 //自动挂载路由方式
 Object.keys(routesContext).forEach((v) => {
-  routes.push(routesContext[v].default)
+  routes.push(...routesContext[v].default)
+  // routesContext[v].default.map((item: any) => {
+  //   console.log(item)
+  //   routes.push(item)
+  // })
 })
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 })
 
