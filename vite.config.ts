@@ -3,8 +3,8 @@
  * @version:
  * @Author: 扫地盲僧
  * @Date: 2022-01-19 16:19:27
- * @LastEditors: BlindMonk
- * @LastEditTime: 2022-01-21 17:59:38
+ * @LastEditors: 唐亿开
+ * @LastEditTime: 2022-01-25 16:32:34
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -97,6 +97,7 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 8000,
     open: true,
+    cors: true,
     https: false,
     proxy: {},
   },

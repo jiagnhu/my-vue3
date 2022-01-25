@@ -1,10 +1,11 @@
 /*
- * @GitHub: https://github.com/MaleWeb/vvtp
- * @version:
- * @Author: 扫地盲僧
- * @Date: 2022-01-17 16:21:01
- * @LastEditors: BlindMonk
- * @LastEditTime: 2022-01-21 18:39:41
+ * @@Author: 唐亿开
+ * @Date: 2022-01-25 14:54:08
+ * @LastEditors: 唐亿开
+ * @LastEditTime: 2022-01-25 14:56:04
+ * @FilePath: /my-vue3/postcss.config.js
+ * @kjj1: 图案快捷键：window：ctrl+alt+j, mac：ctrl+cmd+j
+ * @kjj2: 首部注释快捷键：window：ctrl+alt+i, mac：ctrl+cmd+i
  */
 module.exports = {
   plugins: {
